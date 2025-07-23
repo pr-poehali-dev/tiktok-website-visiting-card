@@ -61,7 +61,10 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'tiktok-pink': '#FF0050',
+				'tiktok-cyan': '#25F4EE',
+				'dark-bg': '#161823'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +87,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'bounce-slow': {
+					'0%, 20%, 53%, 80%, 100%': { transform: 'translate3d(0,0,0)' },
+					'40%, 43%': { transform: 'translate3d(0, -30px, 0)' },
+					'70%': { transform: 'translate3d(0, -15px, 0)' },
+					'90%': { transform: 'translate3d(0, -4px, 0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'bounce-slow': 'bounce-slow 2s infinite'
 			}
 		}
 	},
