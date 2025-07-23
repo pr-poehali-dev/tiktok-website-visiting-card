@@ -18,9 +18,9 @@ const Index = () => {
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/img/4dbc409c-4154-4cf6-b0a5-ec32d68772cf.jpg" 
+              src="https://cdn.poehali.dev/files/6fa075c6-a07e-4079-b6ce-80f835a76199.png" 
               alt="realkelpie" 
-              className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-gradient-to-r from-tiktok-pink to-tiktok-cyan shadow-2xl hover:scale-110 transition-transform duration-300"
+              className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-tiktok-pink shadow-2xl hover:scale-110 transition-transform duration-300 object-cover"
             />
           </div>
           
